@@ -16,8 +16,16 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="rpg_char.Longsword">
+    <Position X="4" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAGAAAAAgAAAgAIACAgA=</HashCode>
+      <FileName>Longsword.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Struct Name="rpg_char.Dice">
-    <Position X="8" Y="6" Width="1.5" />
+    <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAACAAAAQAAAAAAAAAAAAAAAAAAAE=</HashCode>
       <FileName>Dice.cs</FileName>
@@ -31,17 +39,10 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IWeapon">
-    <Position X="5.5" Y="3.25" Width="1.5" />
+    <Position X="4" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAACAAAAAAAAAAAAAgAAAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>IWeapon.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="rpg_char.ISpel">
-    <Position X="14" Y="1.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ISpel.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IShield">
@@ -59,14 +60,14 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IEquipable">
-    <Position X="2.75" Y="0.5" Width="1.5" />
+    <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIAAAgA=</HashCode>
       <FileName>IEquipable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IItem">
-    <Position X="4.5" Y="0.5" Width="1.5" />
+    <Position X="4" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAACAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>IItem.cs</FileName>
@@ -75,7 +76,7 @@
   <Interface Name="rpg_char.ICharacter">
     <Position X="11.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ABAAAAAAAAAAAAAAAAIAAAQAAAAAAAABAAAAAgAAAAA=</HashCode>
       <FileName>ICharacter.cs</FileName>
     </TypeIdentifier>
   </Interface>
@@ -87,17 +88,24 @@
     </TypeIdentifier>
   </Interface>
   <Enum Name="rpg_char.DamageType">
-    <Position X="8" Y="1.25" Width="1.5" />
+    <Position X="8" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEAAAAAAAAAAAQACAAAAAMAAIAAACAAAAIAAA=</HashCode>
       <FileName>DamageType.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="rpg_char.WeaponProperty">
-    <Position X="8" Y="3.75" Width="1.5" />
+    <Position X="8" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAACAAAAAAAAAAEAAAEAAAAAQAAAAEAABA=</HashCode>
       <FileName>WeaponProperty.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="rpg_char.EquipmentSlot">
+    <Position X="8" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACwAAAQAAQIEAEAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>EquipmentSlot.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />
