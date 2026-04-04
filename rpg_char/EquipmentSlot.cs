@@ -11,8 +11,8 @@ namespace rpg_char
         Chest,
         Legs,
         Hands,
-        MainHand,
-        OffHand,
+        Weapon_1,
+        Weapon_2,
         talisman_1,
         talisman_2,
         talisman_3

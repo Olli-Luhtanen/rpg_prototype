@@ -12,12 +12,24 @@ namespace rpg_char
         {
             return "Longsword";
         }
-        public string Description { get; }
-        public int Value { get; }
-        public float Weight { get; }
+        string IItem.Description()
+        {
+            return "";
+        }
+        int IItem.Value()
+        {
+            return 15;
+        }
+        float IItem.Weight()
+        {
+            return 3.0f;
+        }
 
         //Equipment info
-        public EquipmentSlot Slot => EquipmentSlot.MainHand;
+        void IEquipable.Slot()
+        {
+            // Implementation for equipping the longsword in the appropriate slot (e.g., main hand)
+        }
         public void Equip(Character character)
         {
 
@@ -28,7 +40,10 @@ namespace rpg_char
         }
 
         //Weapon info
-        public WeaponProperty Properties {  get; }
+        public DamageType DamageType => DamageType.Slashing;
+        public Dice Damage => new Dice(1, 8);
+        public Dice? VersatileDamage => new Dice(1, 10);
 
+        public WeaponProperty WeaponProperty => WeaponProperty.Versatile;
     }
 }

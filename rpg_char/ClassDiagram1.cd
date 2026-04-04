@@ -19,15 +19,29 @@
   <Class Name="rpg_char.Longsword">
     <Position X="4" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAGAAAAAgAAAgAIACAgA=</HashCode>
+      <HashCode>AAAAAACAICAAAAAAAAAAAAAgAGAAAAAoCCAAAIAAAAA=</HashCode>
       <FileName>Longsword.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="rpg_char.CharacterStats">
+    <Position X="11.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAEAAAAAAABBAAAAAAAAACAAAACA=</HashCode>
+      <FileName>CharacterStats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpg_char.CharacterClass">
+    <Position X="10.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CharacterClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Struct Name="rpg_char.Dice">
     <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQAACAAAAQAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAQEACAAAAQAAAAAAAAAAAAAAAAAAAE=</HashCode>
       <FileName>Dice.cs</FileName>
     </TypeIdentifier>
   </Struct>
@@ -74,7 +88,7 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.ICharacter">
-    <Position X="11.75" Y="1.25" Width="1.5" />
+    <Position X="13.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAAAAAAAAAIAAAQAAAAAAAABAAAAAgAAAAA=</HashCode>
       <FileName>ICharacter.cs</FileName>
@@ -104,7 +118,7 @@
   <Enum Name="rpg_char.EquipmentSlot">
     <Position X="8" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAACwAAAQAAQIEAEAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <HashCode>AAAACwAAAAAAQIAAEAAAAAAABAAAAAAAQAAIAAAAAAA=</HashCode>
       <FileName>EquipmentSlot.cs</FileName>
     </TypeIdentifier>
   </Enum>
