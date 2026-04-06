@@ -7,5 +7,6 @@ namespace rpg_char
 {
     public class Character : ICharacter
     {
+        string Name { get; }
     }
 }

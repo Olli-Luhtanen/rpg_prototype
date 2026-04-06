@@ -7,9 +7,9 @@ namespace rpg_char
 {
     public interface IItem
     {
-        string Name();
-        string Description();
-        float Weight();
-        int Value();
+        string Name { get; }
+        string Description { get; }
+        float Weight { get; }
+        int Value { get; }
     }
 }

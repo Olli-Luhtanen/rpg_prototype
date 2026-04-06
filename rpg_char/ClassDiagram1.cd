@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="rpg_char.Character">
-    <Position X="13.75" Y="7.5" Width="1.5" />
+    <Position X="15.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CharacterLogic\Character.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -12,7 +12,7 @@
     <Position X="16.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SaveLogic\JsonSaveManager.cs</FileName>
+      <FileName>Saving\JsonSaveManager.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -20,19 +20,19 @@
     <Position X="7" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAICAAAAAAAAAAAAAgAGAAAAAoCCAAAIAAAAA=</HashCode>
-      <FileName>ItemLogic\Longsword.cs</FileName>
+      <FileName>Equipment\Longsword.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="rpg_char.CharacterStats">
-    <Position X="12" Y="7.5" Width="1.5" />
+    <Position X="13.5" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAEAAAAAAABBAAAAAAAAACAAAACA=</HashCode>
       <FileName>CharacterLogic\CharacterStats.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="rpg_char.CharacterClass">
-    <Position X="15.5" Y="7.5" Width="1.5" />
+    <Position X="17" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CharacterLogic\CharacterClass.cs</FileName>
@@ -49,46 +49,46 @@
     <Position X="16.75" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SaveLogic\IStorageManager.cs</FileName>
+      <FileName>Saving\IStorageManager.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IWeapon">
     <Position X="9.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAACAAAAAAAAAAAAAgAAAAAAAIAAAAAAAAAAA=</HashCode>
-      <FileName>ItemLogic\IWeapon.cs</FileName>
+      <FileName>Equipment\IWeapon.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IShield">
     <Position X="6.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ItemLogic\IShield.cs</FileName>
+      <FileName>Equipment\IShield.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IArmor">
     <Position X="4.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ItemLogic\IArmor.cs</FileName>
+      <FileName>Equipment\IArmor.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IEquipable">
     <Position X="8.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIAAAgA=</HashCode>
-      <FileName>ItemLogic\IEquipable.cs</FileName>
+      <FileName>Equipment\IEquipable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IItem">
     <Position X="10.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAACAAAAAAAAAgAAAAAAA=</HashCode>
-      <FileName>ItemLogic\IItem.cs</FileName>
+      <FileName>Equipment\IItem.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.ICharacter">
-    <Position X="13.75" Y="5.25" Width="1.5" />
+    <Position X="15.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAAAAAAAAAIAAAQAAAAAAAABAAAAAgAAAAA=</HashCode>
       <FileName>CharacterLogic\ICharacter.cs</FileName>
@@ -98,7 +98,7 @@
     <Position X="6.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ItemLogic\IDefensive.cs</FileName>
+      <FileName>Equipment\IDefensive.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="rpg_char.DamageType">
