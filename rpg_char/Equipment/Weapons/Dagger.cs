@@ -5,8 +5,7 @@ using System.Text;
 
 namespace rpg_char
 {
-    public interface IArmor : IEquipable, IItem, IDefensive
+    public class Dagger : Weapon
     {
-
     }
 }

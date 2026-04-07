@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace rpg_char
+{
+    public interface IWeapon : IEquippable, IItem
+    {
+        List<DamageComponent> Damage { get; }
+        WeaponProperty Properties { get; }
+    }
+}

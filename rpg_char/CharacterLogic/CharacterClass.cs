@@ -19,11 +19,26 @@ namespace rpg_char
 
     class Warrior : CharacterClass
     {
-        public Warrior() : base("Warrior", new Dice(1,8)) { }
+        public Warrior() : base("Warrior", new Dice(1,10)) { }
     }
-
     class Mage : CharacterClass
     {
         public Mage() : base("Mage", new Dice(1,6)) { }
+    }
+    class Rogue : CharacterClass
+    {
+        public Rogue() : base("Rogue", new Dice(1,8)) { }
+    }
+    class Bard : CharacterClass
+    {
+        public Bard() : base("Bard", new Dice(1,8)) { }
+    }
+    class Ranger : CharacterClass
+    {
+        public Ranger() : base("Ranger", new Dice(1,8)) { }
+    }
+    class Cleric : CharacterClass
+    {
+        public Cleric() : base("Cleric", new Dice(1,10)) { }
     }
 }

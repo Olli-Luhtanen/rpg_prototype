@@ -6,7 +6,7 @@ using System.Text;
 namespace rpg_char
 {
     // This interface has common methods of equipable gear and atributes like name, value and such.
-    public interface IEquipable
+    public interface IEquippable
     {
         void Equip(ICharacter character);
         void Unequip(ICharacter character);
