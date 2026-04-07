@@ -25,6 +25,8 @@ namespace rpg_char
             Class = characterClass ?? throw new ArgumentNullException(nameof(characterClass));
             Level = Math.Max(1, level);
             Stats = stats ?? new CharacterStats();
+
+            CurrentHP = MaxHP;
         }
 
         // Inventory
@@ -56,8 +58,24 @@ namespace rpg_char
             _equippedSlots[(int)slot] = null;
         }
 
+        // Armor Class calculation
         public int TotalDefense() => _equippedSlots
             .OfType<IDefensive>()
             .Sum(d => d.ArmorRating);
+
+
+        //Health management
+        public void TakeDamage(int amount)
+        {
+            if (amount < 0) throw new ArgumentOutOfRangeException(nameof(amount));
+            CurrentHP = Math.Max(0, CurrentHP - amount);
+        }
+        public void Heal(int amount)
+        {
+            if (amount < 0) throw new ArgumentOutOfRangeException(nameof(amount));
+            CurrentHP = Math.Min(MaxHP, CurrentHP + amount);
+        }
+
+        public bool IsAlive => CurrentHP > 0;
     }
 }

@@ -25,10 +25,6 @@ namespace rpg_char
     {
         public Mage() : base("Mage", new Dice(1,6)) { }
     }
-    class Rogue : CharacterClass
-    {
-        public Rogue() : base("Rogue", new Dice(1,8)) { }
-    }
     class Bard : CharacterClass
     {
         public Bard() : base("Bard", new Dice(1,8)) { }
@@ -36,9 +32,5 @@ namespace rpg_char
     class Ranger : CharacterClass
     {
         public Ranger() : base("Ranger", new Dice(1,8)) { }
-    }
-    class Cleric : CharacterClass
-    {
-        public Cleric() : base("Cleric", new Dice(1,10)) { }
     }
 }

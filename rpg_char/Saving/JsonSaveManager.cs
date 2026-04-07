@@ -7,15 +7,14 @@ namespace rpg_char
 {
     public class JsonSaveManager : IStorageManager
     {
-        public void Save(Character character,string path)
+        public void Save(ICharacter character,string path)
         {
 
         }
 
         public Character Load(string path) 
         {
-            Character value = new Character();
-            return value;
+            
         }
     }
 }

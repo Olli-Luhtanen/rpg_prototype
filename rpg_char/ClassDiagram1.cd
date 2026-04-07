@@ -3,7 +3,7 @@
   <Class Name="rpg_char.Character">
     <Position X="19.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QBAAAAAAAAAAAAAAAIoAEAQAIAAQAIChAAAAAoAAAAA=</HashCode>
+      <HashCode>QRAAAAAAAAAAAACAAIoAEAQAIAAQAIChAAAAgoAAAAA=</HashCode>
       <FileName>CharacterLogic\Character.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -34,14 +34,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="rpg_char.CharacterClass">
-    <Position X="21.5" Y="0.5" Width="1.5" />
+    <Position X="18" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CharacterLogic\CharacterClass.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="rpg_char.Weapon" Collapsed="true">
-    <Position X="6.75" Y="6" Width="1.5" />
+    <Position X="10.25" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAACAAAAAAAAAAAAAAAAAAAAAgAAAAAIQCAgA=</HashCode>
       <FileName>Equipment\Weapons\Weapon.cs</FileName>
@@ -70,7 +70,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="rpg_char.Armor" Collapsed="true">
-    <Position X="6.75" Y="11.25" Width="1.5" />
+    <Position X="10.25" Y="12.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIAAAgA=</HashCode>
       <FileName>Equipment\Defence\Armor.cs</FileName>
@@ -78,9 +78,9 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="rpg_char.Shield" Collapsed="true">
-    <Position X="6.75" Y="10" Width="1.5" />
+    <Position X="10.25" Y="9.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIAAAgA=</HashCode>
       <FileName>Equipment\Defence\Shield.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -93,7 +93,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="rpg_char.BaseItem">
-    <Position X="12.25" Y="0.75" Width="1.5" />
+    <Position X="12" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAACAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>BaseItem.cs</FileName>
@@ -105,6 +105,34 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Equipment\Weapons\Bow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpg_char.MediumShield">
+    <Position X="10.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MediumShield.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpg_char.SmallShield">
+    <Position X="8.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SmallShield.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpg_char.LeatherArmor">
+    <Position X="10.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LeatherArmor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpg_char.PlateArmor">
+    <Position X="8.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PlateArmor.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Struct Name="rpg_char.Dice">
@@ -122,14 +150,14 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IEquippable">
-    <Position X="8.75" Y="0.75" Width="1.5" />
+    <Position X="8.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIAAAgA=</HashCode>
-      <FileName>Equipment\IEquipable.cs</FileName>
+      <FileName>Equipment\IEquippable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IItem">
-    <Position X="10.5" Y="0.75" Width="1.5" />
+    <Position X="10" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAACAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>Equipment\IItem.cs</FileName>
@@ -143,31 +171,38 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IDefensive">
-    <Position X="7" Y="0.75" Width="1.5" />
+    <Position X="6.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Equipment\Defence\IDefensive.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IWeapon">
-    <Position X="10.5" Y="3.5" Width="1.5" />
+    <Position X="8.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
       <FileName>Equipment\Weapons\IWeapon.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IShield">
-    <Position X="7" Y="3.5" Width="1.5" />
+    <Position X="4.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Equipment\Defence\IShield.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IArmor">
-    <Position X="8.75" Y="3.5" Width="1.5" />
+    <Position X="6.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Equipment\Defence\IArmor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="rpg_char.IHealth">
+    <Position X="21.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAACAAIAAEAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>IHealth.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="rpg_char.DamageType">

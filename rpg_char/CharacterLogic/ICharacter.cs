@@ -5,7 +5,7 @@ using System.Text;
 
 namespace rpg_char
 {
-    public interface ICharacter
+    public interface ICharacter : IHealth
     {
         string Name { get; }
         CharacterClass Class { get; }
