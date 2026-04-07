@@ -3,7 +3,7 @@
   <Class Name="rpg_char.Character">
     <Position X="19.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QRAAAAAAAAAAAACAAIoAEAQAIAAQAIChAAAAgoAAAAA=</HashCode>
+      <HashCode>QRAAAAAAAAAAAACAAIoAEAQAIBAQAIChAAAAgoAAAAA=</HashCode>
       <FileName>CharacterLogic\Character.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -36,7 +36,7 @@
   <Class Name="rpg_char.CharacterClass">
     <Position X="18" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAACAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAACAAAAgAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CharacterLogic\CharacterClass.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -103,7 +103,7 @@
   <Class Name="rpg_char.Bow">
     <Position X="3.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
       <FileName>Equipment\Weapons\Bow.cs</FileName>
     </TypeIdentifier>
   </Class>

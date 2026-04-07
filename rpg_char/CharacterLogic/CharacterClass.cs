@@ -22,22 +22,31 @@ namespace rpg_char
             Name = name;
             HitDice = hitdice;
         }
+
+        public virtual string GetClassDescription() => $"{Name} - {HitDice}HP per level";
     }
 
     class Warrior : CharacterClass
     {
         public Warrior() : base("Warrior", new Dice(1,10)) { }
+        public override string GetClassDescription() => $"{Name} - {HitDice}HP per level, masters of combat and heavy armor";
     }
     class Mage : CharacterClass
     {
         public Mage() : base("Mage", new Dice(1,6)) { }
+        public override string GetClassDescription() => $"{Name} - {HitDice}HP per level, wielders of arcane power";
+
     }
     class Bard : CharacterClass
     {
         public Bard() : base("Bard", new Dice(1,8)) { }
+        public override string GetClassDescription() => $"{Name} - {HitDice}HP per level, Charismatic wielders of the arcane";
+
     }
     class Ranger : CharacterClass
     {
         public Ranger() : base("Ranger", new Dice(1,8)) { }
+        public override string GetClassDescription() => $"{Name} - {HitDice}HP per level, masters of tracking, survival and nature";
+
     }
 }
