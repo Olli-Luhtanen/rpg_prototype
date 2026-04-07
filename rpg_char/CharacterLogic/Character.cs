@@ -46,6 +46,7 @@ namespace rpg_char
 
         public void Equip(IEquippable item)
         {
+            _inventory.Remove(item);
             _equippedSlots[(int)item.Slot] = item;
             item.Equip(this);
         }

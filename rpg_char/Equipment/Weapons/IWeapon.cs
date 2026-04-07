@@ -5,7 +5,7 @@ using System.Text;
 
 namespace rpg_char
 {
-    public interface IWeapon : IEquippable, IItem
+    public interface IWeapon : IEquippable
     {
         List<DamageComponent> Damage { get; }
         WeaponProperty Properties { get; }

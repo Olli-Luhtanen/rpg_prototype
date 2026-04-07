@@ -5,7 +5,7 @@ using System.Text;
 
 namespace rpg_char
 {
-    public interface IShield : IEquippable, IItem, IDefensive
+    public interface IShield : IEquippable, IDefensive
     {
     }
 }

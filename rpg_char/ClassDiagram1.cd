@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="rpg_char.Character">
-    <Position X="19.75" Y="3" Width="1.5" />
+    <Position X="19.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QBAAAAAAAAAAAAAAAIoAEAQAIAAQAIChAAAAAoAAAAA=</HashCode>
       <FileName>CharacterLogic\Character.cs</FileName>
@@ -18,20 +18,23 @@
   </Class>
   <Class Name="rpg_char.Longsword">
     <Position X="6.75" Y="7.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Equipment\Weapons\Longsword.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="rpg_char.CharacterStats">
-    <Position X="18" Y="3" Width="1.5" />
+    <Position X="18" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAEAAAAAAABBAAAAAAAAACAAAACA=</HashCode>
       <FileName>CharacterLogic\CharacterStats.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="rpg_char.CharacterClass">
-    <Position X="21.5" Y="3" Width="1.5" />
+    <Position X="21.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CharacterLogic\CharacterClass.cs</FileName>
@@ -40,7 +43,7 @@
   <Class Name="rpg_char.Weapon" Collapsed="true">
     <Position X="6.75" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIQCAgA=</HashCode>
+      <HashCode>AAAAAACAACAAAAAAAAAAAAAAAAAAAAAgAAAAAIQCAgA=</HashCode>
       <FileName>Equipment\Weapons\Weapon.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -66,15 +69,8 @@
       <FileName>Equipment\Weapons\Hammer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="rpg_char.Bow">
-    <Position X="3.25" Y="7.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Equipment\Weapons\Bow.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="rpg_char.Armor" Collapsed="true">
-    <Position X="6.75" Y="10.25" Width="1.5" />
+    <Position X="6.75" Y="11.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIAAAgA=</HashCode>
       <FileName>Equipment\Defence\Armor.cs</FileName>
@@ -82,7 +78,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="rpg_char.Shield" Collapsed="true">
-    <Position X="6.75" Y="9" Width="1.5" />
+    <Position X="6.75" Y="10" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Equipment\Defence\Shield.cs</FileName>
@@ -103,6 +99,13 @@
       <FileName>BaseItem.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="rpg_char.Bow">
+    <Position X="3.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Equipment\Weapons\Bow.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Struct Name="rpg_char.Dice">
     <Position X="15.75" Y="0.75" Width="1.5" />
@@ -133,9 +136,9 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.ICharacter">
-    <Position X="19.75" Y="0.75" Width="1.5" />
+    <Position X="19.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAAAAAAAIAAAQAAAAAAAABAAAAAgAAAAA=</HashCode>
+      <HashCode>ABAAAAAAAAAAAAAAAAIAAAQAIAAQAAAhAAAAAoAAAAA=</HashCode>
       <FileName>CharacterLogic\ICharacter.cs</FileName>
     </TypeIdentifier>
   </Interface>

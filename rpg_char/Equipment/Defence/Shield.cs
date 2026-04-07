@@ -16,7 +16,13 @@ namespace rpg_char
             ArmorRating = armorRating;
         }
 
-        public void Equip(ICharacter character) { }
-        public void Unequip(ICharacter character) { }
+        public void Equip(ICharacter character){
+            IEquippable? current = character.GetEquipped(Slot);
+            if (current != null)
+                character.AddToInventory(current);
+        }
+        public void Unequip(ICharacter character){ 
+            character.AddToInventory(this); 
+        }
     }
 }
