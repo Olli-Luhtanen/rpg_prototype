@@ -11,7 +11,7 @@
   <Class Name="rpg_char.JsonSaveManager">
     <Position X="15.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAgIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Saving\JsonSaveManager.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />

@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace rpg_char
 {
     public class DamageComponent
     {
-        public Dice Dice { get; }
-        public DamageType Type { get; }
+        public Dice Dice { get; set; }
+        public DamageType Type { get; set; }
 
+        [JsonConstructor]
         public DamageComponent(Dice dice, DamageType type)
         {
             Dice = dice;

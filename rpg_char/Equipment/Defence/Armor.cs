@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace rpg_char
 {
     public class Armor : BaseItem, IArmor
     {
-        public EquipmentSlot Slot { get; }
-        public int ArmorRating { get; }
+        public EquipmentSlot Slot { get; set; }
+        public int ArmorRating { get; set; }
 
+        [JsonConstructor]
         public Armor(string name, string description, float weight, int value,
                      int armorRating, EquipmentSlot slot)
                     :base(name, description, weight, value)

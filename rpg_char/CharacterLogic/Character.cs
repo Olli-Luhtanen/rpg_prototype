@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace rpg_char
 {
@@ -19,6 +20,7 @@ namespace rpg_char
         private readonly List<IItem> _inventory = new List<IItem>();
         public IReadOnlyList<IItem> Inventory => _inventory.AsReadOnly();
 
+        [JsonConstructor]
         public Character(string name, CharacterClass characterClass, int level = 1, CharacterStats? stats = null)
         {
             Name = name ?? throw new ArgumentNullException(nameof(name));
@@ -44,6 +46,15 @@ namespace rpg_char
 
         // Equipment
         private readonly IEquippable?[] _equippedSlots = new IEquippable?[Enum.GetValues<EquipmentSlot>().Length];
+        public List<IEquippable?> EquippedItems
+        {
+            get => _equippedSlots.ToList();
+            set
+            {
+                for (int i = 0; i < value.Count && i < _equippedSlots.Length; i++)
+                    _equippedSlots[i] = value[i];
+            }
+        }
         public IEquippable? GetEquipped(EquipmentSlot slot) => _equippedSlots[(int)slot];
 
         public void Equip(IEquippable item)

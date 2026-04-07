@@ -2,14 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace rpg_char
 {
+    [JsonPolymorphic(TypeDiscriminatorPropertyName = "$type")]
+    [JsonDerivedType(typeof(Warrior), "warrior")]
+    [JsonDerivedType(typeof(Mage), "mage")]
+    [JsonDerivedType(typeof(Bard), "bard")]
+    [JsonDerivedType(typeof(Ranger), "ranger")]
     public abstract class CharacterClass
     {
         public string Name { get; }
         public Dice HitDice { get; }
 
+        [JsonConstructor]
         protected CharacterClass(string name, Dice hitdice) 
         {
             Name = name;
