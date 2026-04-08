@@ -7,8 +7,8 @@ namespace rpg_char
 {
     public interface IStorageManager
     {
-        void Save(ICharacter character, string path);
+        void Save(Character character, string path);
 
-        ICharacter Load(string path);
+        Character Load(string path);
     }
 }
