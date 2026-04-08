@@ -19,9 +19,7 @@ namespace rpg_char
         }
 
         public void Equip(ICharacter character){
-            IEquippable? current = character.GetEquipped(Slot);
-            if (current != null)
-                character.AddToInventory(current);
+
         }
         public void Unequip(ICharacter character){ 
             character.AddToInventory(this); 

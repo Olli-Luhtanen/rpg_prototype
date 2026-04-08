@@ -11,6 +11,7 @@ namespace rpg_char
     [JsonDerivedType(typeof(Mage), "mage")]
     [JsonDerivedType(typeof(Bard), "bard")]
     [JsonDerivedType(typeof(Ranger), "ranger")]
+
     public abstract class CharacterClass
     {
         public string Name { get; }
@@ -25,6 +26,7 @@ namespace rpg_char
 
         public virtual string GetClassDescription() => $"{Name} - {HitDice}";
     }
+
     class Warrior : CharacterClass
     {
         public Warrior() : base("Warrior", new Dice(1,10)) { }

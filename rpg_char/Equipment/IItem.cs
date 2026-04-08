@@ -19,6 +19,7 @@ namespace rpg_char
     [JsonDerivedType(typeof(MediumShield), "mediumshield")]
     [JsonDerivedType(typeof(LeatherArmor), "leatherarmor")]
     [JsonDerivedType(typeof(PlateArmor), "platearmor")]
+
     public interface IItem
     {
         string Name { get; }

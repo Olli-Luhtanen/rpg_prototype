@@ -26,10 +26,6 @@ namespace rpg_char
 
         public void Equip(ICharacter character)
         {
-            IEquippable? current = character.GetEquipped(Slot);
-            if (current != null)
-                character.AddToInventory(current);
-
             if ((Properties & WeaponProperty.TwoHanded) != 0)
                 character.Unequip(EquipmentSlot.Weapon_2);
         }

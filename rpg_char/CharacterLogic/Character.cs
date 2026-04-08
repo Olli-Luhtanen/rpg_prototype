@@ -10,8 +10,10 @@ namespace rpg_char
     {
         public string Name { get; private set; }
         public int Level { get; private set; }
-        public int MaxHP => Class.HitDice.Sides + (Stats.Constitution * Level);
+
+        public int MaxHP => Class.HitDice.Sides;
         public int CurrentHP { get; private set; }
+
 
         [JsonPropertyName("class")]
         public CharacterClass Class { get; private set; }
@@ -44,7 +46,7 @@ namespace rpg_char
         }
 
 
-        // Equipment
+        // Equipment + slot managment
         private readonly IEquippable?[] _equippedSlots = new IEquippable?[Enum.GetValues<EquipmentSlot>().Length];
         public List<IEquippable?> EquippedItems
         {
@@ -59,17 +61,37 @@ namespace rpg_char
 
         public void Equip(IEquippable item)
         {
+            if (item == null) throw new ArgumentNullException(nameof(item));
+            if (!Inventory.Contains(item)) throw new InvalidOperationException("Item must be in inventory to equip.");
+
+            int slotIndex = (int)item.Slot;
+            if (slotIndex < 0 || slotIndex >= _equippedSlots.Length)
+                throw new ArgumentOutOfRangeException(nameof(item.Slot), "Invalid equipment slot.");
+
+            var previousItem = _equippedSlots[slotIndex];
+            if (previousItem != null)
+            {
+                previousItem.Unequip(this);
+                Inventory.Add(previousItem);
+            }
+
             Inventory.Remove(item);
             _equippedSlots[(int)item.Slot] = item;
             item.Equip(this);
         }
         public void Unequip(EquipmentSlot slot)
         {
+            int idx = (int)slot;
+            if (idx < 0 || idx >= _equippedSlots.Length) throw new ArgumentOutOfRangeException(nameof(slot));
+
+            var item = _equippedSlots[idx];
+            if (item == null) return;
+
             _equippedSlots[(int)slot]?.Unequip(this);
             _equippedSlots[(int)slot] = null;
         }
 
-        // Armor Class calculation
+        // Armor Class calc
         public int TotalDefense() => _equippedSlots
             .OfType<IDefensive>()
             .Sum(d => d.ArmorRating);
@@ -86,7 +108,6 @@ namespace rpg_char
             if (amount < 0) throw new ArgumentOutOfRangeException(nameof(amount));
             CurrentHP = Math.Min(MaxHP, CurrentHP + amount);
         }
-
         public bool IsAlive => CurrentHP > 0;
 
         public override string ToString() => $"{Name} | {Class.Name} Level {Level} | HP: {CurrentHP}/{MaxHP} | AC: {TotalDefense()}";
