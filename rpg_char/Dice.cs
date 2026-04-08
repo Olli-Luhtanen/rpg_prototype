@@ -6,12 +6,10 @@ using System.Text.Json.Serialization;
 
 namespace rpg_char
 {
-    public struct Dice
+    public readonly struct Dice
     {
         public int Count { get; }
         public int Sides { get; }
-
-        private static readonly Random _random = new Random();
 
         [JsonConstructor]
         public Dice(int count, int sides)
@@ -22,7 +20,15 @@ namespace rpg_char
             Sides = sides;
         }
 
-        public int Roll() => _random.Next(Count, Count * Sides + 1);
+        public int Roll()
+        {
+            int total = 0;
+            for (int i = 0; i < Count; i++)
+            {
+                total += Random.Shared.Next(1, Sides + 1);
+            }
+            return total;
+        }
 
         public override string ToString() => $"{Count}d{Sides}";
     }

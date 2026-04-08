@@ -8,8 +8,8 @@ namespace rpg_char
 {
     public class Armor : BaseItem, IArmor
     {
-        public EquipmentSlot Slot { get; set; }
         public int ArmorRating { get; set; }
+        public EquipmentSlot Slot { get; set; }
 
         [JsonConstructor]
         public Armor(string name, string description, float weight, int value,

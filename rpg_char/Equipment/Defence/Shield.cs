@@ -8,8 +8,8 @@ namespace rpg_char
 {
     public class Shield : BaseItem, IShield
     {
-        public EquipmentSlot Slot => EquipmentSlot.Weapon_2;
         public int ArmorRating { get; set; }
+        public EquipmentSlot Slot => EquipmentSlot.Weapon_2;
 
         [JsonConstructor]
         public Shield(string name, string description, float weight, int value,

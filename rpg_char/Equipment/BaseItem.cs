@@ -12,7 +12,7 @@ namespace rpg_char
         public string Description { get; set; }
         public float Weight { get; set; }
         public int Value { get; set; }
-
+        
         [JsonConstructor]
         protected BaseItem(string name, string description, float weight, int value)
         {

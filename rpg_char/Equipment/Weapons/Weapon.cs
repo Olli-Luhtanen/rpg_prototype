@@ -38,10 +38,9 @@ namespace rpg_char
             character.AddToInventory(this);
         }
 
-        //TODO: Check if the versitile or two hand is checked correctly
         public virtual int RollDamage(bool twoHanded = false)
         {
-            if (twoHanded && (Properties & WeaponProperty.Versatile) != 0 && VersatileDamage != null)
+            if (twoHanded && Properties.HasFlag(WeaponProperty.Versatile) && VersatileDamage != null)
                 return VersatileDamage.Sum(d => d.Dice.Roll());
             return Damage.Sum(d => d.Dice.Roll());
         }

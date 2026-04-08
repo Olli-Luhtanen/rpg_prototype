@@ -17,6 +17,6 @@ namespace rpg_char
             slot: EquipmentSlot.Weapon_1
         )
         { }
-        public override int RollDamage(bool twoHanded = false) => Damage.Sum(d => d.Dice.Roll());
+        public override int RollDamage(bool twoHanded = true) => Damage.Sum(d => d.Dice.Roll());
     }
 }
