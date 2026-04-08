@@ -17,5 +17,7 @@ namespace rpg_char
             Dice = dice;
             Type = type;
         }
+
+        public override string ToString() => $"{Dice} {Type}";
     }
 }

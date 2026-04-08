@@ -21,5 +21,7 @@ namespace rpg_char
             Weight = weight;
             Value = value;
         }
+
+        public override string ToString() => $"{Name} - {Value}g {Weight}kg";
     }
 }

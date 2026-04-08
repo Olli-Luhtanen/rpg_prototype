@@ -28,5 +28,7 @@ namespace rpg_char
         public void Unequip(ICharacter character){
             character.AddToInventory(this);
         }
+
+        public override string ToString() => $"{Name} - {ArmorRating} AC | {Value}g {Weight}kg";
     }
 }

@@ -45,5 +45,7 @@ namespace rpg_char
                 return VersatileDamage.Sum(d => d.Dice.Roll());
             return Damage.Sum(d => d.Dice.Roll());
         }
+
+        public override string ToString() => $"{Name} - {string.Join(", ", Damage)} {Properties} | {Value}g {Weight}kg";
     }
 }

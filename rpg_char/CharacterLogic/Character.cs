@@ -88,5 +88,7 @@ namespace rpg_char
         }
 
         public bool IsAlive => CurrentHP > 0;
+
+        public override string ToString() => $"{Name} | {Class.Name} Level {Level} | HP: {CurrentHP}/{MaxHP} | AC: {TotalDefense()}";
     }
 }
