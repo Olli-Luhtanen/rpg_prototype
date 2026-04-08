@@ -9,7 +9,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="rpg_char.JsonSaveManager">
-    <Position X="16.75" Y="7.5" Width="1.5" />
+    <Position X="15.75" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Saving\JsonSaveManager.cs</FileName>
@@ -34,7 +34,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="rpg_char.CharacterClass">
-    <Position X="17.75" Y="3" Width="1.5" />
+    <Position X="17.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAgAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CharacterLogic\CharacterClass.cs</FileName>
@@ -143,7 +143,7 @@
     </TypeIdentifier>
   </Struct>
   <Interface Name="rpg_char.IStorageManager">
-    <Position X="16.75" Y="5.75" Width="1.5" />
+    <Position X="15.75" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Saving\IStorageManager.cs</FileName>

@@ -18,8 +18,7 @@ namespace rpg_char
         public CharacterStats Stats { get; private set; }
 
 
-        private readonly List<IItem> _inventory = new List<IItem>();
-        public IReadOnlyList<IItem> Inventory => _inventory.AsReadOnly();
+        public List<IItem> Inventory { get; set; } = new List<IItem>();
 
         [JsonConstructor]
         public Character(string name, CharacterClass @class, int level = 1, CharacterStats? stats = null)
@@ -36,12 +35,12 @@ namespace rpg_char
         public void AddToInventory(IItem item)
         {
             if (item == null) throw new ArgumentNullException(nameof(item));
-            _inventory.Add(item);
+            Inventory.Add(item);
         }
         public bool RemoveFromInventory(IItem item)
         {
             if (item == null) return false;
-            return _inventory.Remove(item);
+            return Inventory.Remove(item);
         }
 
 
@@ -60,7 +59,7 @@ namespace rpg_char
 
         public void Equip(IEquippable item)
         {
-            _inventory.Remove(item);
+            Inventory.Remove(item);
             _equippedSlots[(int)item.Slot] = item;
             item.Equip(this);
         }

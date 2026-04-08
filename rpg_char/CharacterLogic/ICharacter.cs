@@ -11,7 +11,7 @@ namespace rpg_char
         CharacterClass Class { get; }
         int Level { get; }
         CharacterStats Stats { get; }
-        IReadOnlyList<IItem> Inventory { get; }
+        List<IItem> Inventory { get; set; }
 
         IEquippable? GetEquipped(EquipmentSlot slot);
         void Equip(IEquippable item);
