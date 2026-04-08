@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="rpg_char.Character">
-    <Position X="19.75" Y="3.75" Width="1.5" />
+    <Position X="19.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QRAAAAAAAAAAAACAAIoAEAQAIBAQAIChAAAAgoAAAAA=</HashCode>
       <FileName>CharacterLogic\Character.cs</FileName>
@@ -9,7 +9,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="rpg_char.JsonSaveManager">
-    <Position X="15.75" Y="7.5" Width="1.5" />
+    <Position X="16" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Saving\JsonSaveManager.cs</FileName>
@@ -27,14 +27,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="rpg_char.CharacterStats">
-    <Position X="18" Y="0.5" Width="1.5" />
+    <Position X="17.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAEAAAAAAABBAAAAAAAAACAAAACA=</HashCode>
       <FileName>CharacterLogic\CharacterStats.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="rpg_char.CharacterClass">
-    <Position X="18" Y="2.75" Width="1.5" />
+    <Position X="17.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAgAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CharacterLogic\CharacterClass.cs</FileName>
@@ -96,7 +96,7 @@
     <Position X="12" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAACAAAAAAAAAgAAAAAAA=</HashCode>
-      <FileName>BaseItem.cs</FileName>
+      <FileName>Equipment\BaseItem.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -111,28 +111,28 @@
     <Position X="10.25" Y="10.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>MediumShield.cs</FileName>
+      <FileName>Equipment\Defence\MediumShield.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="rpg_char.SmallShield">
     <Position X="8.5" Y="10.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SmallShield.cs</FileName>
+      <FileName>Equipment\Defence\SmallShield.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="rpg_char.LeatherArmor">
     <Position X="10.25" Y="13.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>LeatherArmor.cs</FileName>
+      <FileName>Equipment\Defence\LeatherArmor.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="rpg_char.PlateArmor">
     <Position X="8.5" Y="13.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>PlateArmor.cs</FileName>
+      <FileName>Equipment\Defence\PlateArmor.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Struct Name="rpg_char.Dice">
@@ -143,7 +143,7 @@
     </TypeIdentifier>
   </Struct>
   <Interface Name="rpg_char.IStorageManager">
-    <Position X="15.75" Y="5.75" Width="1.5" />
+    <Position X="16" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Saving\IStorageManager.cs</FileName>
@@ -164,7 +164,7 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.ICharacter">
-    <Position X="19.75" Y="0.5" Width="1.5" />
+    <Position X="19.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAAAAAAAAAIAAAQAIAAQAAAhAAAAAoAAAAA=</HashCode>
       <FileName>CharacterLogic\ICharacter.cs</FileName>
@@ -199,10 +199,10 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="rpg_char.IHealth">
-    <Position X="21.5" Y="0.5" Width="1.5" />
+    <Position X="22" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAAAAAAACAAIAAEAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
-      <FileName>IHealth.cs</FileName>
+      <FileName>CharacterLogic\IHealth.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="rpg_char.DamageType">
