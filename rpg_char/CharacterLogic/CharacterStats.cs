@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace rpg_char
 {
@@ -14,6 +15,7 @@ namespace rpg_char
         public int Intelligence { get; set; }
         public int Charisma { get; set; }
 
+        [JsonConstructor]
         public CharacterStats(int strength = 10, int dexterity = 10, int constitution = 10, int wisdom = 10, int intelligence = 10, int charisma = 10)
         {
             Strength = strength;

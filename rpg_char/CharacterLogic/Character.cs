@@ -13,6 +13,7 @@ namespace rpg_char
         public int MaxHP => Class.HitDice.Sides + (Stats.Constitution * Level);
         public int CurrentHP { get; private set; }
 
+        [JsonPropertyName("class")]
         public CharacterClass Class { get; private set; }
         public CharacterStats Stats { get; private set; }
 
@@ -21,10 +22,10 @@ namespace rpg_char
         public IReadOnlyList<IItem> Inventory => _inventory.AsReadOnly();
 
         [JsonConstructor]
-        public Character(string name, CharacterClass characterClass, int level = 1, CharacterStats? stats = null)
+        public Character(string name, CharacterClass @class, int level = 1, CharacterStats? stats = null)
         {
             Name = name ?? throw new ArgumentNullException(nameof(name));
-            Class = characterClass ?? throw new ArgumentNullException(nameof(characterClass));
+            Class = @class ?? throw new ArgumentNullException(nameof(@class));
             Level = Math.Max(1, level);
             Stats = stats ?? new CharacterStats();
 

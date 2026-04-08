@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace rpg_char
 {
@@ -12,6 +13,7 @@ namespace rpg_char
 
         private static readonly Random _random = new Random();
 
+        [JsonConstructor]
         public Dice(int count, int sides)
         {
             if (count < 1) throw new ArgumentException("Count must be at least 1");
